@@ -1,0 +1,176 @@
+#landing-page-packages,
+#full-website-packages,
+#ecommerce-website-packages {
+    display: none;
+    margin-top: 90px;
+
+    transition: all .5s;
+}
+
+.packages {
+    min-width: 100vw;
+    color: #fff;
+    padding: 40px 70px;
+    background: url("../images/services/packages-bg.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#full-website-packages .packages .package {
+    height: 900px;
+}
+
+#ecommerce-website-packages .packages .package {
+    height: 1330px;
+}
+
+.packages .package {
+    width: 100%;
+    height: 630px;
+    padding: 25px;
+    border: 1px solid rgba(171, 171, 171, 0.313);
+    backdrop-filter: blur(12px);
+
+    position: relative;
+}
+
+.package-body {
+    /* background: #000; */
+    padding-bottom: 10%;
+}
+
+.packages .package .row {
+    margin: 1rem !important;
+}
+
+.packages .package h3 {
+    text-transform: uppercase;
+    font-size: 25px;
+    font-weight: 700;
+    font-family: 'Times New Roman', Times, serif;
+
+    margin-bottom: 50px;
+}
+
+.packages .package .row p {
+    font-size: 14px;
+    color: #ffffffd1;
+    font-weight: normal;
+    letter-spacing: 1px;
+
+    margin: 0% !important;
+}
+
+.packages .package img {
+    width: 60%;
+    filter: drop-shadow(15px 15px 18px 10px rgba(0, 0, 0, 0.651));
+}
+
+.packages .package span {
+    /* text-decoration: #fff wavy underline;
+    text-decoration-skip-ink: none;
+    height: 1rem; */
+    font-weight: bold;
+    color: #fff;
+    font-size: 17px;
+}
+
+.package .package-cta-container {
+    /* border: 1px solid white; */
+    width: 100%;
+    position: absolute;
+    bottom: 3%;
+    left: 0%;
+
+    /* margin: 15px 0; */
+}
+
+.package .package-cta-container span {
+    display: block;
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+.package .package-cta-container button {
+    border: 1px solid white;
+    border-radius: 7px;
+    outline: none;
+    cursor: pointer;
+    transition: .5s;
+
+    width: 60%;
+    padding: 8px 0;
+    margin-top: 10px;
+    margin: auto;
+    display: block;
+
+    background: transparent;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.package .package-cta-container button:hover {
+    /* border: transparent; */
+    background: #fff;
+    color: black;
+}
+
+.modal-content {
+    background: #2d85d8;
+    color: #fff;
+}
+
+.modal-header {
+    padding: 0px 30px !important;
+}
+
+.modal-body .form-control {
+    border: none;
+    outline: none;
+    background: transparent;
+    border-bottom: 1px solid #fff;
+    border-radius: 0;
+    color: white;
+    font-size: 1.2rem;
+    padding-top: 0;
+}
+
+.modal-body label {
+    padding-bottom: 0;
+    font-size: small;
+    color: white;
+}
+
+.modal-body form button {
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 1rem 2rem;
+    width: 100%;
+    display: inline-block;
+    border-radius: 0.5rem;
+    -webkit-transition: all 0.2s;
+    transition: all 0.2s;
+    position: relative;
+    font-size: 1.6rem;
+    border: none;
+    cursor: pointer;
+
+    color: #fff;
+    background-color: midnightblue;
+}
+
+.modal-footer p {
+    font-size: 15px;
+    margin: auto;
+    /* padding: 13px 0; */
+    text-shadow: 3px 3px 2px #1111118e;
+    color: #fff;
+    text-align: center;
+}
+
+#more {
+    display: none;
+}

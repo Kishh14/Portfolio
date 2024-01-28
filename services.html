@@ -1,0 +1,1983 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services | Kishan Salvi</title>
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link href="https://cdn.lineicons.com/4.0/lineicons.css" rel="stylesheet" />
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="./assets/css/style.css" media="screen">
+    <link rel="stylesheet" href="./assets/css/home.css" media="screen">
+    <link rel="stylesheet" href="./assets/css/services.css">
+    <link id="u-theme-google-font" rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i">
+    <link id="u-page-google-font" rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Oswald:200,300,400,500,600,700|PT+Sans:400,400i,700,700i">
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <style>
+        .flip-card-inner {
+            transition: transform 0.6s;
+            transform-style: preserve-3d;
+            backface-visibility: hidden;
+            -moz-backface-visibility: hidden;
+        }
+
+        .flip-card:focus {
+            outline: 0;
+        }
+
+        .flip-card:hover .flip-card-inner,
+        .flip-card:focus .flip-card-inner {
+            transform: rotateY(180deg);
+        }
+
+        .flip-card-front,
+        .flip-card-back {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+        }
+
+        .flip-card-front {
+            background: linear-gradient(to left, #4364f7, #6fb1fc);
+            color: black;
+            z-index: 2;
+        }
+
+        .flip-card-back {
+            background: linear-gradient(to right, #4364f7, #6fb1fc);
+            color: white;
+            transform: rotateY(180deg);
+            z-index: 1;
+        }
+
+        .breadcrumb-con {
+            background: url(./assets/images/services/svg-bg.png);
+            height: 235px;
+        }
+    </style>
+
+    <!-- Services -->
+    <style>
+        html {
+            font-size: 62.5%;
+        }
+
+        .section-plans .u-center-text {
+            text-align: center !important;
+        }
+
+        .section-plans .u-margin-bottom-small {
+            margin-bottom: 1.5rem !important;
+        }
+
+        .section-plans .u-margin-bottom-medium {
+            margin-bottom: 4rem !important;
+        }
+
+        .section-plans .u-margin-top-big {
+            margin-top: 5rem !important;
+        }
+
+        body {
+            font-family: "Lato", sans-serif;
+            font-weight: 400;
+            line-height: 1.7;
+            /* color: #fff; */
+            /* background: #000; */
+        }
+
+        .section-plans .heading-primary {
+            color: #fff;
+            text-transform: uppercase;
+            -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+            margin-bottom: 6rem;
+        }
+
+        .section-plans .heading-primary--main {
+            display: block;
+            font-size: 6rem;
+            font-weight: 400;
+            letter-spacing: 3.5rem;
+            -webkit-animation-name: moveInLeft;
+            animation-name: moveInLeft;
+            -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+            -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+            /*
+        animation-delay: 3s;
+        animation-iteration-count: 3;
+        */
+        }
+
+        .section-plans .heading-primary--sub {
+            display: block;
+            font-size: 2rem;
+            font-weight: 700;
+            letter-spacing: 1.75rem;
+            -webkit-animation: moveInRight 1s ease-out;
+            animation: moveInRight 1s ease-out;
+        }
+
+        .section-plans .heading-secondary {
+            font-size: 3.5rem;
+            text-transform: uppercase;
+            font-weight: 700;
+            color: transparent;
+            letter-spacing: 0.2rem;
+            line-height: 1;
+            -webkit-transition: all 0.2s;
+            transition: all 0.2s;
+            color: #eee;
+        }
+
+        .section-plans .btn,
+        .section-plans .btn:link,
+        .section-plans .btn:visited {
+            text-transform: uppercase;
+            text-decoration: none;
+            padding: 1.5rem 4rem;
+            display: inline-block;
+            border-radius: 0.5rem;
+            -webkit-transition: all 0.2s;
+            transition: all 0.2s;
+            position: relative;
+            font-size: 1.6rem;
+            border: none;
+            cursor: pointer;
+        }
+
+        .section-plans .btn:hover {
+            -webkit-transform: translateY(-3px);
+            transform: translateY(-3px);
+            -webkit-box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+            box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+        }
+
+        .section-plans .btn:hover::after {
+            -webkit-transform: scaleX(1.4) scaleY(1.6);
+            transform: scaleX(1.4) scaleY(1.6);
+            opacity: 0;
+        }
+
+        .section-plans .btn:active,
+        .section-plans .btn:focus {
+            outline: none;
+            -webkit-transform: translateY(-1px);
+            transform: translateY(-1px);
+            -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+            box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+        }
+
+        .section-plans .btn--white {
+            background-color: #fff;
+            color: #777;
+        }
+
+        .section-plans .btn--white::after {
+            background-color: #fff;
+        }
+
+        .section-plans .btn--green {
+            background: -webkit-gradient(linear, left top, right top, from(#fc466b), to(#3f5efb));
+            background: linear-gradient(to right, #fc466b, #3f5efb);
+            color: #fff;
+        }
+
+        .btn--green:hover {
+            color: white !important;
+        }
+
+        .section-plans .btn--green::after {
+            background-color: #55c57a;
+        }
+
+        .section-plans .section-plans {
+            background-color: #000;
+            padding: 4rem 0 4rem 0;
+        }
+
+        .section-plans .card {
+            -webkit-perspective: 150rem;
+            perspective: 150rem;
+            -moz-perspective: 150rem;
+            position: relative;
+            height: 52rem;
+        }
+
+        .section-plans .card__side {
+            height: 52rem;
+            -webkit-transition: all 0.8s ease;
+            transition: all 0.8s ease;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+            border-radius: 3px;
+            overflow: hidden;
+            -webkit-box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+            box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+        }
+
+        .section-plans .card__side--front {
+            background-color: #fff;
+        }
+
+        .section-plans .card__side--front-1 {
+            background: linear-gradient(-45deg, #f403d1, #64b5f6);
+        }
+
+        .section-plans .card__side--front-2 {
+            background: linear-gradient(-45deg, #f321d7, #ffec61);
+        }
+
+        .section-plans .card__side--front-3 {
+            background: linear-gradient(-45deg, #24ff72, #9a4eff);
+        }
+
+        .section-plans .card__side--back {
+            -webkit-transform: rotateY(180deg);
+            transform: rotateY(180deg);
+        }
+
+        .section-plans .card__side--back-1 {
+            background: linear-gradient(-45deg, #64b5f6, #f403d1);
+        }
+
+        .section-plans .card__side--back-2 {
+            background: linear-gradient(-45deg, #ffec61, #f321d7);
+        }
+
+        .section-plans .card__side--back-3 {
+            background: linear-gradient(-45deg, #9a4eff, #24ff72);
+        }
+
+        .section-plans .card:hover .card__side--front-1,
+        .section-plans .card:hover .card__side--front-2,
+        .section-plans .card:hover .card__side--front-3 {
+            -webkit-transform: rotateY(-180deg);
+            transform: rotateY(-180deg);
+        }
+
+        .section-plans .card:hover .card__side--back {
+            -webkit-transform: rotateY(0);
+            transform: rotateY(0);
+        }
+
+        .section-plans .card__title {
+            height: 20rem;
+            padding: 4rem 2rem 2rem;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+            flex-direction: column;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+        }
+
+        .section-plans .card__title--1 .fas {
+            font-size: 5rem;
+        }
+
+        .section-plans .card__title--2 .fas {
+            font-size: 5rem;
+        }
+
+        .section-plans .card__title--3 .fas {
+            font-size: 5rem;
+        }
+
+        .section-plans .card__heading {
+            font-size: 4rem;
+            font-weight: 300;
+            text-transform: uppercase;
+            text-align: center;
+            color: #fff;
+            width: 75%;
+        }
+
+        .section-plans .card__heading-span {
+            padding: 1rem 1.5rem;
+            -webkit-box-decoration-break: clone;
+            box-decoration-break: clone;
+        }
+
+        .section-plans .card__details {
+            padding: 0 2rem;
+        }
+
+        .section-plans .card__details ul {
+            list-style: none;
+            width: 80%;
+            margin: auto;
+            padding-left: 0 !important;
+        }
+
+        .section-plans .card__details ul li {
+            text-align: center;
+            font-size: 1.5rem;
+            padding: 1rem;
+        }
+
+        .section-plans .card__details ul li:not(:last-child) {
+            border-bottom: 1px solid #eee;
+        }
+
+        .section-plans .card__cta {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+            width: 90%;
+            text-align: center;
+        }
+
+        .section-plans .card__price-box {
+            text-align: center;
+            color: #fff;
+            margin-bottom: 8rem;
+        }
+
+        .section-plans .card__price-only {
+            font-size: 1.4rem;
+            text-transform: uppercase;
+        }
+
+        .section-plans .card__price-value {
+            font-size: 6rem;
+            font-weight: 100;
+        }
+
+        .section-plans .row {
+            max-width: 114rem;
+            margin: 0 auto;
+        }
+
+        .section-plans .row:not(:last-child) {
+            margin-bottom: 5rem;
+            margin-top: 5rem;
+        }
+
+        .section-plans .row::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        .section-plans .row [class^="col-"] {
+            float: left;
+        }
+
+        .section-plans .row [class^="col-"]:not(:last-child) {
+            margin-right: 6rem;
+        }
+
+        .section-plans .row .col-1-of-3 {
+            width: calc((100% - 2 * 6rem) / 3);
+        }
+    </style>
+
+    <!-- Testimonial -->
+    <style>
+        .u-image {
+            object-fit: cover;
+            display: block;
+            vertical-align: middle;
+            background-size: cover;
+            background-position: 50% 50%;
+            background-repeat: no-repeat;
+            background-repeat-x: no-repeat;
+            background-repeat-y: no-repeat;
+        }
+
+        .u-image {
+            color: #111111;
+        }
+
+        .u-section-2 {
+            background-image: url("./assets/images/services/testimonial-bg.jpg");
+            background-position: 50% 57.47%;
+        }
+
+        section.u-image {
+            overflow: visible;
+        }
+
+        *,
+        :before,
+        :after {
+            box-sizing: border-box;
+        }
+
+        .u-clearfix:before,
+        .u-clearfix:after {
+            content: '';
+            display: table;
+        }
+
+        section>* {
+            position: relative;
+        }
+
+        .u-sheet {
+            position: relative;
+            width: 1140px;
+            margin: 0 auto;
+        }
+
+        @media (min-width: 1200px) {
+            .u-sheet {
+                width: 1140px;
+            }
+        }
+
+        .u-valign-middle {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .u-valign-middle {
+            justify-content: center;
+        }
+
+        .u-section-2 .u-sheet-1 {
+            min-height: 716px;
+        }
+
+        .u-sheet:not(.u-image):not(.u-video) {
+            pointer-events: none;
+        }
+
+        .u-sheet>* {
+            position: relative;
+        }
+
+        .u-expanded-width {
+            width: 100% !important;
+            margin-left: 0 !important;
+            margin-right: 0 !important;
+        }
+
+        .u-section-2 .u-layout-wrap-1 {
+            margin-top: 60px;
+            margin-bottom: 60px;
+        }
+
+        .u-sheet:not(.u-image):not(.u-video)>* {
+            pointer-events: initial;
+        }
+
+        .u-layout-row {
+            display: flex;
+        }
+
+        .u-layout-row {
+            flex: 1 1 100%;
+        }
+
+        .u-layout-row {
+            flex-direction: row;
+            flex-wrap: wrap;
+            min-height: 100%;
+            max-width: 100%;
+        }
+
+        .u-layout-row>* {
+            max-height: 100%;
+        }
+
+        .u-layout-cell {
+            position: relative;
+            display: flex;
+            background-clip: padding-box;
+            background-origin: padding-box;
+        }
+
+        .u-align-center {
+            text-align: center;
+        }
+
+        .u-layout-cell {
+            background-color: transparent !important;
+            opacity: 1;
+        }
+
+        .u-layout-row>.u-size-30 {
+            flex: 0 0 50%;
+            max-width: 50%;
+        }
+
+        .u-section-2 .u-layout-cell-1 {
+            /* min-height: 596px; */
+        }
+
+        .u-layout-cell:before,
+        .u-group.u-opacity:before {
+            content: '';
+            display: block;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+        }
+
+        .u-layout-cell.u-image {
+            overflow: visible;
+        }
+
+        .u-container-style:not([class*="u-align-"]) {
+            text-align: left;
+        }
+
+        .u-section-2 .u-image-2 {
+            /* min-height: 596px; */
+            /* background-image: url("./assets/images/services/pexelsphoto3388849.jpeg"); */
+            background-position: 50% 58.49%;
+        }
+
+        .u-container-layout {
+            position: relative;
+            flex: 1;
+            max-width: 100%;
+        }
+
+        .u-section-2 .u-container-layout-1 {
+            padding: 30px;
+        }
+
+        .u-section-2 .u-container-layout-2 {
+            padding: 30px;
+        }
+
+        h4 {
+            margin-top: 0;
+            margin-bottom: 0.5rem;
+            line-height: 1.2;
+            font-weight: 500;
+            color: inherit;
+        }
+
+        h4 {
+            font-size: 1.25rem;
+        }
+
+        h4 {
+            font-family: Roboto, sans-serif;
+        }
+
+        h4 {
+            font-weight: 400;
+            font-size: 1.5rem;
+            line-height: 1.2;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        .u-text-default {
+            display: table;
+        }
+
+        .u-container-layout>* {
+            position: relative;
+        }
+
+        .u-text {
+            word-wrap: break-word;
+            position: relative;
+        }
+
+        .u-section-2 .u-text-1 {
+            text-transform: uppercase;
+            font-weight: 300;
+            letter-spacing: 4px;
+            font-size: 1.25rem;
+            margin: 0;
+        }
+
+        h2 {
+            margin-top: 0;
+            margin-bottom: 0.5rem;
+            line-height: 1.2;
+            font-weight: 500;
+            color: inherit;
+        }
+
+        h2 {
+            font-size: 1.5rem;
+        }
+
+        h2 {
+            font-family: Roboto, sans-serif;
+        }
+
+        h2:not(.u-subtitle) {
+            font-weight: 400;
+            font-size: 2.25rem;
+            line-height: 1.1;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        .u-font-playfair-display.u-custom-font {
+            font-family: 'Playfair Display', serif !important;
+        }
+
+        .u-section-2 .u-text-2 {
+            font-size: 3rem;
+            margin: 20px 0 0;
+        }
+
+        p {
+            margin-top: 0;
+            margin-bottom: 0.5rem;
+        }
+
+        p:not(.u-text-variant) {
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        .u-section-2 .u-text-3 {
+            font-size: 1.25rem;
+            width: 407px;
+            margin: 20px auto 0;
+        }
+
+        img {
+            border-style: none;
+        }
+
+        img.u-image {
+            overflow: hidden;
+        }
+
+        .u-image.u-image-contain {
+            object-fit: contain;
+            background-size: contain;
+        }
+
+        .u-section-2 .u-image-1 {
+            width: 255px;
+            height: 124px;
+            margin: 30px auto 0;
+        }
+
+        b {
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body style="overflow-x: hidden;">
+    <header>
+        <div class="container-fluid breadcrumb-con text-center mt-0">
+            <div class="row">
+                <div class="col">
+                    <h1 class="text-white text-center pt-4 mt-0" style="font-size: 4rem;">Services</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <p class="text-white d-flex align-items-center mt-0 justify-content-center"
+                        style="font-size: 1.5rem;">
+                        <a class="text-white text-decoration-none me-1" href="./index.html" style="font-size: 1.5rem;">
+                            <i class="lni lni-home"></i>
+                            Home
+                        </a> / Services
+                    </p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section>
+            <div class="container">
+                <div class="row">
+                    <div class="col p-3">
+                        <p style="color: rgb(37, 37, 255); text-align: center; font-size: 15px; letter-spacing: 3px;">
+                            Helping
+                            ambition
+                            brands growing</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <h3 class="h3" style="text-align: center; font-weight: 600; font-size: 2.2rem;">
+                            Harmonizing Business and Technology, <br>
+                            Crafting Spaces that Reignite Your <span style="color: crimson;">Passion</span> for Work.
+                        </h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services -->
+        <section class="section-plans">
+            <!-- Cards -->
+            <div class="row">
+                <div class="col col-md-4 col-12 py-5 px-4">
+                    <div class="card border-0">
+                        <div class="card__side card__side--front-1">
+                            <div class="card__title card__title--1">
+                                <!-- <i class="fas fa-paper-plane"></i> -->
+                                <h4 class="text-white " style="font-size: 28px;">Landing Page Creation</h4>
+                                <p class="m-0 text-center text-white my-2" style="font-size: 15px;">Crafting
+                                    captivating landing pages that
+                                    convert visitors into customers. I
+                                    design high-converting pages that make a lasting impact.</p>
+                            </div>
+
+                            <figure>
+                                <img src="./assets/images/services/landing-page.png" alt=""
+                                    class="shadow-lg m-auto d-block" style="width: 80%;">
+                            </figure>
+
+                            <div class="card__details text-white">
+                                <ul>
+                                    <li style="font-size: 15px;">✅ 1 Page Website</li>
+                                    <li style="font-size: 15px;">✅ Free SEO Optimization</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="card__side card__side--back card__side--back-1">
+                            <div class="card__cta">
+                                <div class="card__price-box">
+                                    <p class="card__price-only">Get Your Landing Page</p>
+                                    <p class="card__price-only">Starting from </p>
+                                    <p class="card__price-value" style="font-size: 40px;">$119*</p>
+                                </div>
+                                <p class="text-white">For more details</p>
+                                <a onclick="showPackages(this)" class="btn btn--white">Select</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col col-md-4 col-12 py-5 px-4">
+                    <div class="card border-0">
+                        <div class="card__side card__side--front-2">
+                            <div class="card__title card__title--2">
+                                <!-- <i class="fas fa-paper-plane"></i> -->
+                                <h4 class="text-white" style="font-size: 28px;">Full Website Frontend</h4>
+                                <p class="m-0 text-center text-white my-2 " style="font-size: 15px;">Bringing your brand
+                                    to life with a fully
+                                    responsive and visually striking website. Elevate your online presence with a
+                                    seamless 5-page frontend.</p>
+                            </div>
+
+                            <figure>
+                                <img src="./assets/images/services/full-website.png" alt=""
+                                    class="shadow-lg m-auto d-block" style="width: 80%;">
+                            </figure>
+
+                            <div class="card__details text-white">
+                                <ul>
+                                    <li style="font-size: 15px;">✅ Upto 15 Page's Website</li>
+                                    <li style="font-size: 15px;">✅ Free SEO Optimization</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="card__side card__side--back card__side--back-2">
+                            <div class="card__cta">
+                                <div class="card__price-box">
+                                    <p class="card__price-only">Launch Your Web Journey</p>
+                                    <p class="card__price-only">Starting from </p>
+                                    <p class="card__price-value" style="font-size: 40px;">$219*</p>
+                                </div>
+                                <p class="text-white">For more details</p>
+                                <a class="btn btn--white" onclick="showPackages(this)">Select</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col col-md-4 col-12 py-5 px-4">
+                    <div class="card border-0">
+                        <div class="card__side card__side--front-3">
+                            <div class="card__title card__title--3">
+                                <!-- <i class="fas fa-paper-plane"></i> -->
+                                <h4 class="text-white" style="font-size: 28px;">Ecommerce Frontend</h4>
+                                <p class="m-0 text-center text-white my-2" style="font-size: 15px;">Empower your
+                                    business with a stunning and
+                                    user-friendly ecommerce website frontend. Showcase your products in style and drive
+                                    sales.</p>
+                            </div>
+
+                            <figure>
+                                <img src="./assets/images/services/4283653.jpg" alt="" class="shadow-lg m-auto d-block"
+                                    style="width: 80%;">
+                            </figure>
+
+                            <div class="card__details text-white">
+                                <ul>
+                                    <li style="font-size: 15px;">✅ Upto 25 Pages Website</li>
+                                    <li style="font-size: 15px;">✅ Free SEO Optimization</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="card__side card__side--back card__side--back-3">
+                            <div class="card__cta">
+                                <div class="card__price-box">
+                                    <p class="card__price-only">Build Your Online Store</p>
+                                    <p class="card__price-only">Starting from </p>
+                                    <p class="card__price-value" style="font-size: 40px;">$299*</p>
+                                </div>
+                                <p class="text-white">For more details</p>
+                                <a class="btn btn--white" onclick="showPackages(this)">Select</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Landing Page Packages -->
+            <div class="container-fluid my-5 fs-4 g-0 p-0 m-0" id="landing-page-packages">
+                <h1 class="text-center fw-bold mb-5 pb-4">
+                    <span style="font-family: 'Times New Roman', Times, serif; text-decoration: midnightblue wavy underline;
+                    text-decoration-skip-ink:none;">Landing</span>
+                    <span class="fw-normal">Page</span>
+                </h1>
+                <a name="landing-page-packages"></a>
+                <div class="packages row justify-content-center m-0 g-0">
+                    <!-- Basic Package -->
+                    <div class="col package">
+                        <h3 class="text-center">Basic Package</h3>
+                        <div class="package-body">
+                            <div class="row">
+                                <div class="col pe-0">
+                                    <img src="./assets/images/services/green-tickmark.png" alt="">
+                                </div>
+                                <div class="col-11 ps-0">
+                                    <p>
+                                        A single, focused landing page designed to engage and convert visitors.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col pe-0">
+                                    <img src="./assets/images/services/green-tickmark.png" alt="">
+                                </div>
+                                <div class="col-11 ps-0">
+                                    <span>Responsive Design</span>
+                                    <p>
+                                        Ensuring the landing page looks and functions well on various devices,
+                                        from desktops to mobile phones.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col pe-0">
+                                    <img src="./assets/images/services/green-tickmark.png" alt="">
+                                </div>
+                                <div class="col-11 ps-0">
+                                    <span>2-3 CTAs (Call to Actions)</span>
+                                    <p>
+                                        Strategically placed CTAs to guide visitors toward taking
+                                        desired actions, such as signing up or making a purchase.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col pe-0">
+                                    <img src="./assets/images/services/green-tickmark.png" alt="">
+                                </div>
+                                <div class="col-11 ps-0">
+                                    <span>Basic SEO Optimization:</span>
+                                    <p>Basic on-page SEO optimization to improve search engine visibility.</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col pe-0">
+                                    <img src="./assets/images/services/green-tickmark.png" alt="">
+                                </div>
+                                <div class="col-11 ps-0">
+                                    <span>Essential Analytics:</span>
+                                    <p>Integration with basic analytics tools to track visitor behavior and
+                                        performance.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="package-cta-container">
+                            <span class="package-cost">$119</span>
+                            <button onclick="showModal(this)" data-bs-toggle="modal"
+                                data-bs-target="#packagesModal">Choose
+                                this package</button>
+                        </div>
+                    </div>
+                    <!-- Standard Package -->
+                    <div class="col package">
+                        <h3 class="text-center">Standard Package</h3>
+                        <div class="package-body">
+                            <div class="row">
+                                <div class="col pe-0">
+                                    <img src="./assets/images/services/green-tickmark.png" alt="">
+                                </div>
+                                <div class="col-11 ps-0">
+                                    <p>A unique landing page to target different
+                                        audience segments or campaigns.</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col pe-0">
+                                    <img src="./assets/images/services/green-tickmark.png" alt="">
+                                </div>
+                                <div class="col-11 ps-0">
+                                    <span>Responsive Design:</span>
+                                    <p>Ensuring that the landing page adapt seamlessly to different screen
+                                        sizes.</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col pe-0">
+                                    <img src="./assets/images/services/green-tickmark.png" alt="">
+                                </div>
+                                <div class="col-11 ps-0">
+                                    <span>4-5 CTAs (Call to Actions):</span>
+                                    <p>A greater number of CTAs to engage visitors at different stages
+                                        of the conversion funnel.</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col pe-0">
+                                    <img src="./assets/images/services/green-tickmark.png" alt="">
+                                </div>
+                                <div class="col-11 ps-0">
+                                    <span>Free SSL Certificate:</span>
+                                    <p>Installation of a free SSL certificate to enhance security and build
+                                        trust with visitors.</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col pe-0">
+                                    <img src="./assets/images/services/green-tickmark.png" alt="">
+                                </div>
+                                <div class="col-11 ps-0">
+                                    <span>Advanced SEO Optimization:</span>
+                                    <p>More comprehensive on-page and off-page SEO to improve search
+                                        engine rankings.</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col pe-0">
+                                    <img src="./assets/images/services/green-tickmark.png" alt="">
+                                </div>
+                                <div class="col-11 ps-0">
+                                    <span>Comprehensive Analytics:</span>
+                                    <p>Integration with advanced analytics tools to provide detailed
+                                        insights into visitor behavior and conversions.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="package-cta-container">
+                            <span class="package-cost">$217</span>
+                            <button onclick="showModal(this)" data-bs-toggle="modal"
+                                data-bs-target="#packagesModal">Choose this package</button>
+                        </div>
+                    </div>
+                    <!-- Premium Package -->
+                    <div class="col package">
+                        <h3 class="text-center">Premium Package</h3>
+                        <div class="package-body">
+                            <div class="row">
+                                <div class="col pe-0">
+                                    <img src="./assets/images/services/green-tickmark.png" alt="">
+                                </div>
+                                <div class="col-11 ps-0">
+                                    <span>Custom Landing Page:</span>
+                                    <p>A fully custom-designed landing page that aligns with your
+                                        brand identity and goals.</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col pe-0">
+                                    <img src="./assets/images/services/green-tickmark.png" alt="">
+                                </div>
+                                <div class="col-11 ps-0">
+                                    <span>Dynamic Elements:</span>
+                                    <p>Integration of dynamic elements like animations, interactive forms, and
+                                        personalized
+                                        content.</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col pe-0">
+                                    <img src="./assets/images/services/green-tickmark.png" alt="">
+                                </div>
+                                <div class="col-11 ps-0">
+                                    <span>6-8 CTAs (Call to Actions):</span>
+                                    <p>A wide range of CTAs to cover various conversion paths and user interactions.</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col pe-0">
+                                    <img src="./assets/images/services/green-tickmark.png" alt="">
+                                </div>
+                                <div class="col-11 ps-0">
+                                    <span>SSL Certificate Included:</span>
+                                    <p>SSL certificate included with the package to secure user data and transactions.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col pe-0">
+                                    <img src="./assets/images/services/green-tickmark.png" alt="">
+                                </div>
+                                <div class="col-11 ps-0">
+                                    <span>Advanced SEO Strategy:</span>
+                                    <p>In-depth SEO strategy, including keyword research, competitor analysis, and
+                                        ongoing
+                                        optimization.</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col pe-0">
+                                    <img src="./assets/images/services/green-tickmark.png" alt="">
+                                </div>
+                                <div class="col-11 ps-0">
+                                    <span>Dedicated Support:</span>
+                                    <p>Priority support, multiple revision rounds, and consultations to ensure the
+                                        landing
+                                        page
+                                        meets and exceeds expectations.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="package-cta-container">
+                            <span class="package-cost">$349</span>
+                            <button onclick="showModal(this)" data-bs-toggle="modal"
+                                data-bs-target="#packagesModal">Choose this package</button>
+                        </div>
+                    </div>
+
+                    <!-- Landing Page Modal -->
+                    <!-- <div class="modal fade" id="landingPageBasicModal" tabindex="-1" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-4">Order Confirmation</h1>
+                                    <button type="button" class="btn-close me-1" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <form>
+                                        Personal Info
+                                        <div class="row mt-2 mb-2">
+                                            <div class="col">
+                                                <label for="client-name" class="col-form-label">Name:</label>
+                                                <input type="text" class="form-control" id="client-name" required>
+                                            </div>
+                                            <div class="col">
+                                                <label for="client-number" class="col-form-label">Number:</label>
+                                                <input type="number" class="form-control" id="client-number" required>
+                                            </div>
+                                            <div class="col">
+                                                <label for="client-email" class="col-form-label">Email:</label>
+                                                <input type="email" class="form-control" id="client-email" required>
+                                            </div>
+                                        </div>
+
+                                        Package Info
+                                        <div class="row align-items-center my-3">
+                                            <input type="text" hidden aria-hidden="true" name="Landing Page" data-service="Landing Page">
+                                            <div class="col form-check">
+                                                <input class="form-check-input" type="radio"
+                                                    id="radio-landing-basic-package" checked>
+                                                <label class="form-check-label" for="radio-landing-basic-package">
+                                                    Basic Package
+                                                </label>
+                                            </div>
+                                            <div class="col form-check">
+                                                <input class="form-check-input" type="radio"
+                                                    id="radio-landing-standard-package" disabled>
+                                                <label class="form-check-label" for="radio-landing-standard-package">
+                                                    Standard Package
+                                                </label>
+                                            </div>
+                                            <div class="col form-check">
+                                                <input class="form-check-input" type="radio"
+                                                    id="radio-landing-premium-package" disabled>
+                                                <label class="form-check-label" for="radio-landing-premium-package">
+                                                    Premium Package
+                                                </label>
+                                            </div>
+                                        </div>
+
+                                        <div class="mb-3">
+                                            <label for="brief-text" class="col-form-label mb-1">Brief project
+                                                description:</label>
+                                            <textarea class="form-control bg-white text-black p-2" id="brief-text"
+                                                rows="4" cols="6"></textarea>
+                                        </div>
+                                        <div class="form-check mt-4">
+                                            <input class="form-check-input" type="checkbox" id="form-consent-checkbox"
+                                                required>
+                                            <label class="form-check-label" for="form-consent-checkbox">
+                                                I agree to receive further communications!!
+                                            </label>
+                                        </div>
+                                        <button type="submit" class="btn mt-3">Submit</button>
+                                    </form>
+                                </div>
+                                <div class="modal-footer p-0">
+                                    <p>You will receive further procedure from me, once submitted the form!</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+
+            <!-- Full Website Packages -->
+            <div class="container-fluid my-5 fs-4 g-0 p-0 m-0" id="full-website-packages">
+                <h1 class="text-center fw-bold mb-5 pb-4">
+                    <span style="font-family: 'Times New Roman', Times, serif; text-decoration: midnightblue wavy underline;
+                    text-decoration-skip-ink:none;">Full Frontend</span>
+                    <span class="fw-normal">Website</span>
+                </h1>
+                <a name="full-website-packages"></a>
+                <div class="packages row justify-content-center m-0 g-0">
+                    <!-- Basic Package -->
+                    <div class="col package">
+                        <h3 class="text-center">Basic Package</h3>
+                        <div class="package-body">
+                            <div class="row">
+                                <div class="col pe-0">
+                                    <img src="./assets/images/services/green-tickmark.png" alt="">
+                                </div>
+                                <div class="col-11 ps-0">
+                                    <span>Up to 5 Pages:</span>
+                                    <p>
+                                        A basic package includes up to 5 pages, covering essential sections like Home,
+                                        About, Services, Contact, and one additional page of your choice.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col pe-0">
+                                    <img src="./assets/images/services/green-tickmark.png" alt="">
+                                </div>
+                                <div class="col-11 ps-0">
+                                    <span>Responsive Design</span>
+                                    <p>
+                                        The website will be designed to be fully responsive, ensuring it looks and
+                                        functions well on all devices.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col pe-0">
+                                    <img src="./assets/images/services/green-tickmark.png" alt="">
+                                </div>
+                                <div class="col-11 ps-0">
+                                    <span>Basic SEO Setup:</span>
+                                    <p>Basic on-page SEO elements such as meta titles, meta descriptions, and image alt
+                                        tags will be optimized.</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col pe-0">
+                                    <img src="./assets/images/services/green-tickmark.png" alt="">
+                                </div>
+                                <div class="col-11 ps-0">
+                                    <span>Essential Analytics:</span>
+                                    <p>Integration with basic analytics tools to track visitor behavior and
+                                        performance.</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col pe-0">
+                                    <img src="./assets/images/services/green-tickmark.png" alt="">
+                                </div>
+                                <div class="col-11 ps-0">
+                                    <span>Contact Form:</span>
+                                    <p>A contact form on the Contact page for user inquiries.</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col pe-0">
+                                    <img src="./assets/images/services/green-tickmark.png" alt="">
+                                </div>
+                                <div class="col-11 ps-0">
+                                    <span>Essential Navigation:</span>
+                                    <p>Standard navigation menus to facilitate easy browsing.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="package-cta-container">
+                            <span class="package-cost">$219</span>
+                            <button onclick="showModal(this)" data-bs-toggle="modal"
+                                data-bs-target="#packagesModal">Choose
+                                this package</button>
+                        </div>
+                    </div>
+                    <!-- Standard Package -->
+                    <div class="col package">
+                        <h3 class="text-center">Standard Package</h3>
+                        <div class="package-body">
+                            <div class="row">
+                                <div class="col pe-0">
+                                    <img src="./assets/images/services/green-tickmark.png" alt="">
+                                </div>
+                                <div class="col-11 ps-0">
+                                    <span>Up to 10 Pages:</span>
+                                    <p>The standard package includes up to 10 pages, allowing for more extensive
+                                        content and sections.</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col pe-0">
+                                    <img src="./assets/images/services/green-tickmark.png" alt="">
+                                </div>
+                                <div class="col-11 ps-0">
+                                    <span>Enhanced Design:</span>
+                                    <p>A more refined and visually appealing design with custom
+                                        graphics and layouts.</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col pe-0">
+                                    <img src="./assets/images/services/green-tickmark.png" alt="">
+                                </div>
+                                <div class="col-11 ps-0">
+                                    <span>Blog Setup:</span>
+                                    <p>If requested, the inclusion of a blog section with a few initial posts.</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col pe-0">
+                                    <img src="./assets/images/services/green-tickmark.png" alt="">
+                                </div>
+                                <div class="col-11 ps-0">
+                                    <span>Free SSL Certificate:</span>
+                                    <p>Installation of a free SSL certificate to enhance security and build
+                                        trust with visitors.</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col pe-0">
+                                    <img src="./assets/images/services/green-tickmark.png" alt="">
+                                </div>
+                                <div class="col-11 ps-0">
+                                    <span>SEO Optimization:</span>
+                                    <p>Comprehensive SEO optimization, including keyword research, on-page SEO, and XML
+                                        sitemap submission.</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col pe-0">
+                                    <img src="./assets/images/services/green-tickmark.png" alt="">
+                                </div>
+                                <div class="col-11 ps-0">
+                                    <span>Comprehensive Analytics:</span>
+                                    <p>Integration with advanced analytics tools to provide detailed
+                                        insights into visitor behavior and conversions.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="package-cta-container">
+                            <span class="package-cost">$299</span>
+                            <button onclick="showModal(this)" data-bs-toggle="modal"
+                                data-bs-target="#packagesModal">Choose this package</button>
+                        </div>
+                    </div>
+                    <!-- Premium Package -->
+                    <div class="col package">
+                        <h3 class="text-center">Premium Package</h3>
+                        <div class="package-body">
+                            <div class="row">
+                                <div class="col pe-0">
+                                    <img src="./assets/images/services/green-tickmark.png" alt="">
+                                </div>
+                                <div class="col-11 ps-0">
+                                    <span>Upto 15 Pages:</span>
+                                    <p>The premium package offers flexibility for creating a website with an extensive
+                                        number of pages to accommodate a wide range of content.</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col pe-0">
+                                    <img src="./assets/images/services/green-tickmark.png" alt="">
+                                </div>
+                                <div class="col-11 ps-0">
+                                    <span>Dynamic Elements:</span>
+                                    <p>Integration of dynamic elements like animations, interactive forms, and
+                                        personalized
+                                        content.</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col pe-0">
+                                    <img src="./assets/images/services/green-tickmark.png" alt="">
+                                </div>
+                                <div class="col-11 ps-0">
+                                    <span>High-Performance Optimization:</span>
+                                    <p>Advanced performance optimization for fast loading times and superior user
+                                        experience.</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col pe-0">
+                                    <img src="./assets/images/services/green-tickmark.png" alt="">
+                                </div>
+                                <div class="col-11 ps-0">
+                                    <span>SSL Certificate Included:</span>
+                                    <p>SSL certificate included with the package to secure user data and transactions.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col pe-0">
+                                    <img src="./assets/images/services/green-tickmark.png" alt="">
+                                </div>
+                                <div class="col-11 ps-0">
+                                    <span>Advanced SEO Strategy:</span>
+                                    <p>In-depth SEO strategy, including keyword research, competitor analysis, and
+                                        ongoing
+                                        optimization.</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col pe-0">
+                                    <img src="./assets/images/services/green-tickmark.png" alt="">
+                                </div>
+                                <div class="col-11 ps-0">
+                                    <span>Dedicated Support:</span>
+                                    <p>Priority support, multiple revision rounds, and consultations to ensure the
+                                        website meets and exceeds expectations.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="package-cta-container">
+                            <span class="package-cost">$349</span>
+                            <button onclick="showModal(this)" data-bs-toggle="modal"
+                                data-bs-target="#packagesModal">Choose this package</button>
+                        </div>
+                    </div>
+
+                    <!-- Full Website frontend Modal -->
+                    <!-- <div class="modal fade" id="fullwebsitefrontendBasicModal" tabindex="-1" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-4">Order Confirmation</h1>
+                                    <button type="button" class="btn-close me-1" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <form>
+                                        Personal Info
+                                        <div class="row mt-2 mb-2">
+                                            <div class="col">
+                                                <label for="client-name" class="col-form-label">Name:</label>
+                                                <input type="text" class="form-control" id="client-name" required>
+                                            </div>
+                                            <div class="col">
+                                                <label for="client-number" class="col-form-label">Number:</label>
+                                                <input type="number" class="form-control" id="client-number" required>
+                                            </div>
+                                            <div class="col">
+                                                <label for="client-email" class="col-form-label">Email:</label>
+                                                <input type="email" class="form-control" id="client-email" required>
+                                            </div>
+                                        </div>
+
+                                        Package Info
+                                        <div class="row align-items-center my-3">
+                                            <input type="text" hidden aria-hidden="true"
+                                                data-service="full-website-frontend">
+                                            <div class="col form-check">
+                                                <input class="form-check-input" type="radio"
+                                                    id="radio-landing-basic-package" checked>
+                                                <label class="form-check-label" for="radio-landing-basic-package">
+                                                    Basic Package
+                                                </label>
+                                            </div>
+                                            <div class="col form-check">
+                                                <input class="form-check-input" type="radio"
+                                                    id="radio-landing-standard-package" disabled>
+                                                <label class="form-check-label" for="radio-landing-standard-package">
+                                                    Standard Package
+                                                </label>
+                                            </div>
+                                            <div class="col form-check">
+                                                <input class="form-check-input" type="radio"
+                                                    id="radio-landing-premium-package" disabled>
+                                                <label class="form-check-label" for="radio-landing-premium-package">
+                                                    Premium Package
+                                                </label>
+                                            </div>
+                                        </div>
+
+                                        <div class="mb-3">
+                                            <label for="brief-text" class="col-form-label mb-1">Brief project
+                                                description:</label>
+                                            <textarea class="form-control bg-white text-black p-2" id="brief-text"
+                                                rows="4" cols="6"></textarea>
+                                        </div>
+                                        <div class="form-check mt-4">
+                                            <input class="form-check-input" type="checkbox" id="form-consent-checkbox"
+                                                required>
+                                            <label class="form-check-label" for="form-consent-checkbox">
+                                                I agree to receive further communications!!
+                                            </label>
+                                        </div>
+                                        <button type="submit" class="btn mt-3">Submit</button>
+                                    </form>
+                                </div>
+                                <div class="modal-footer p-0">
+                                    <p>You will receive further procedure from me, once submitted the form!</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+
+            <!-- Ecommerce Website Packages -->
+            <div class="container-fluid my-5 fs-4 g-0 p-0 m-0" id="ecommerce-website-packages">
+                <h1 class="text-center fw-bold mb-5 pb-4">
+                    <span style="font-family: 'Times New Roman', Times, serif; text-decoration: midnightblue wavy underline;
+                    text-decoration-skip-ink:none;">Ecommerce</span>
+                    <span class="fw-normal">Website Frontend</span>
+                </h1>
+                <a name="ecommerce-website-packages"></a>
+                <div class="packages row justify-content-center m-0 g-0">
+                    <!-- Basic Package -->
+                    <div class="col package">
+                        <h3 class="text-center">Basic Package</h3>
+                        <div class="package-body">
+                            <div class="row">
+                                <div class="col pe-0">
+                                    <img src="./assets/images/services/green-tickmark.png" alt="">
+                                </div>
+                                <div class="col-11 ps-0">
+                                    <span>Up to 8 Pages:</span>
+                                    <p>
+                                        A basic package includes up to 8 pages, covering essential pages like HomePage,
+                                        Shop, Single Product Page, Checkout Page, Login/Registration Page, Account or
+                                        Profile Page, About, Contact.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col pe-0">
+                                    <img src="./assets/images/services/green-tickmark.png" alt="">
+                                </div>
+                                <div class="col-11 ps-0">
+                                    <span>Essential E-commerce Setup:</span>
+                                    <p>Setting up a basic e-commerce website with the ability to display and sell
+                                        products online.</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col pe-0">
+                                    <img src="./assets/images/services/green-tickmark.png" alt="">
+                                </div>
+                                <div class="col-11 ps-0">
+                                    <span>Responsive Design</span>
+                                    <p>
+                                        Ensuring the ecommerce website looks and functions well on various devices,
+                                        from desktops to mobile phones.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col pe-0">
+                                    <img src="./assets/images/services/green-tickmark.png" alt="">
+                                </div>
+                                <div class="col-11 ps-0">
+                                    <span>Up to 20 Products:</span>
+                                    <p>
+                                        Including the setup and configuration of up to 20 products in
+                                        the online store.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col pe-0">
+                                    <img src="./assets/images/services/green-tickmark.png" alt="">
+                                </div>
+                                <div class="col-11 ps-0">
+                                    <span>Basic SEO Optimization:</span>
+                                    <p>Basic on-page SEO optimization to improve search engine visibility.</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col pe-0">
+                                    <img src="./assets/images/services/green-tickmark.png" alt="">
+                                </div>
+                                <div class="col-11 ps-0">
+                                    <span>Basic Product Listings:</span>
+                                    <p>Standard product listings with essential details like images, descriptions, and
+                                        prices.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="package-cta-container">
+                            <span class="package-cost">$299</span>
+                            <button onclick="showModal(this)" data-bs-toggle="modal"
+                                data-bs-target="#packagesModal">Choose
+                                this package</button>
+                        </div>
+                    </div>
+                    <!-- Standard Package -->
+                    <div class="col package">
+                        <h3 class="text-center">Standard Package</h3>
+                        <div class="package-body">
+                            <div class="row">
+                                <div class="col pe-0">
+                                    <img src="./assets/images/services/green-tickmark.png" alt="">
+                                </div>
+                                <div class="col-11 ps-0">
+                                    <span>Up to 15 Pages:</span>
+                                    <p>
+                                        A standard package includes up to 15 pages, covering essential pages like
+                                        HomePage,
+                                        Shop, Category Page, Single Product Page, Search Result Page, Cart Page,
+                                        Checkout Page, Shipping Page, Order Confirmed Page, Login/Registration Page,
+                                        Account or
+                                        Profile Page, Privacy Policy, Shipping and Return Policy Page, About, Contact.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col pe-0">
+                                    <img src="./assets/images/services/green-tickmark.png" alt="">
+                                </div>
+                                <div class="col-11 ps-0">
+                                    <span>Enhanced Design:</span>
+                                    <p>A more visually appealing and customized design to reflect the brand's identity.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col pe-0">
+                                    <img src="./assets/images/services/green-tickmark.png" alt="">
+                                </div>
+                                <div class="col-11 ps-0">
+                                    <span>Product Categories:</span>
+                                    <p>Organizing products into categories and subcategories for
+                                        easier navigation.</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col pe-0">
+                                    <img src="./assets/images/services/green-tickmark.png" alt="">
+                                </div>
+                                <div class="col-11 ps-0">
+                                    <span>Up to 35 Products:</span>
+                                    <p>
+                                        Including the setup and configuration of up to 35 products in
+                                        the online store.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col pe-0">
+                                    <img src="./assets/images/services/green-tickmark.png" alt="">
+                                </div>
+                                <div class="col-11 ps-0">
+                                    <span>Free SSL Certificate:</span>
+                                    <p>Installation of a free SSL certificate to enhance security and build
+                                        trust with visitors.</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col pe-0">
+                                    <img src="./assets/images/services/green-tickmark.png" alt="">
+                                </div>
+                                <div class="col-11 ps-0">
+                                    <span>SEO Optimization:</span>
+                                    <p>More comprehensive on-page SEO to improve search
+                                        engine rankings.</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col pe-0">
+                                    <img src="./assets/images/services/green-tickmark.png" alt="">
+                                </div>
+                                <div class="col-11 ps-0">
+                                    <span>Comprehensive Analytics:</span>
+                                    <p>Integration with advanced analytics tools to provide detailed
+                                        insights into visitor behavior and conversions.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="package-cta-container">
+                            <span class="package-cost">$369</span>
+                            <button onclick="showModal(this)" data-bs-toggle="modal"
+                                data-bs-target="#packagesModal">Choose this package</button>
+                        </div>
+                    </div>
+                    <!-- Premium Package -->
+                    <div class="col package">
+                        <h3 class="text-center">Premium Package</h3>
+                        <div class="package-body">
+                            <div class="row">
+                                <div class="col pe-0">
+                                    <img src="./assets/images/services/green-tickmark.png" alt="">
+                                </div>
+                                <div class="col-11 ps-0">
+                                    <span>Up to 25 Pages:</span>
+                                    <p>
+                                        A premium package includes up to 25 pages, covering essential pages like
+                                        HomePage,
+                                        Shop, Category Page, <a id="more-button">more...</a>
+                                    <p id="more">Single Product Page, Search Result Page, Cart Page,
+                                        Checkout Page, Shipping Page, Order Confirmed Page, Login/Registration Page,
+                                        Account or
+                                        Profile Page, Privacy Policy, Shipping and Return Policy Page, About, Contact,
+                                        and additional pages like Payment Failed page, Order History Page, Settings
+                                        Page, Addresses Page, Offers Page, Wishlist Page, Order Tracking Page,
+                                        Feedback/Review Page, Thank you Page and one additional page of your choice.</p>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col pe-0">
+                                    <img src="./assets/images/services/green-tickmark.png" alt="">
+                                </div>
+                                <div class="col-11 ps-0">
+                                    <span>Unlimited Products:</span>
+                                    <p>No limit on the number of products, allowing for a
+                                        comprehensive product catalog.</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col pe-0">
+                                    <img src="./assets/images/services/green-tickmark.png" alt="">
+                                </div>
+                                <div class="col-11 ps-0">
+                                    <span>Dynamic Elements:</span>
+                                    <p>Integration of dynamic elements like animations, interactive forms, and
+                                        personalized
+                                        content.</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col pe-0">
+                                    <img src="./assets/images/services/green-tickmark.png" alt="">
+                                </div>
+                                <div class="col-11 ps-0">
+                                    <span>Custom E-commerce Features:</span>
+                                    <p>Implementation of custom e-commerce features such as
+                                        settings, search results, and wishlists.</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col pe-0">
+                                    <img src="./assets/images/services/green-tickmark.png" alt="">
+                                </div>
+                                <div class="col-11 ps-0">
+                                    <span>SSL Certificate Included:</span>
+                                    <p>SSL certificate included with the package to secure user data and transactions.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col pe-0">
+                                    <img src="./assets/images/services/green-tickmark.png" alt="">
+                                </div>
+                                <div class="col-11 ps-0">
+                                    <span>Performance Optimization:</span>
+                                    <p>Performance optimization for fast loading
+                                        times and a seamless shopping experience.</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col pe-0">
+                                    <img src="./assets/images/services/green-tickmark.png" alt="">
+                                </div>
+                                <div class="col-11 ps-0">
+                                    <span>Multi-Language Support:</span>
+                                    <p>Expanding the site's reach by offering
+                                        multiple languages.</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col pe-0">
+                                    <img src="./assets/images/services/green-tickmark.png" alt="">
+                                </div>
+                                <div class="col-11 ps-0">
+                                    <span>Dedicated Support:</span>
+                                    <p>Priority support, multiple revision rounds, and consultations to ensure the
+                                        ecommerce website
+                                        meets and exceeds expectations.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="package-cta-container">
+                            <span class="package-cost">$599</span>
+                            <button onclick="showModal(this)" data-bs-toggle="modal"
+                                data-bs-target="#packagesModal">Choose this package</button>
+                        </div>
+                    </div>
+
+                    <!-- Ecommerce Website Modal -->
+                    <!-- <div class="modal fade" id="ecommerceWebsiteModal" tabindex="-1" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-4">Order Confirmation</h1>
+                                    <button type="button" class="btn-close me-1" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <form>
+                                        Personal Info
+                                        <div class="row mt-2 mb-2">
+                                            <div class="col">
+                                                <label for="client-name" class="col-form-label">Name:</label>
+                                                <input type="text" class="form-control" id="client-name" required>
+                                            </div>
+                                            <div class="col">
+                                                <label for="client-number" class="col-form-label">Number:</label>
+                                                <input type="number" class="form-control" id="client-number" required>
+                                            </div>
+                                            <div class="col">
+                                                <label for="client-email" class="col-form-label">Email:</label>
+                                                <input type="email" class="form-control" id="client-email" required>
+                                            </div>
+                                        </div>
+
+                                        Package Info
+                                        <div class="row align-items-center my-3">
+                                            <input type="text" hidden aria-hidden="true"
+                                                data-service="ecommerce-Website-Modal">
+                                            <div class="col form-check">
+                                                <input class="form-check-input" type="radio"
+                                                    id="radio-landing-basic-package" checked>
+                                                <label class="form-check-label" for="radio-landing-basic-package">
+                                                    Basic Package
+                                                </label>
+                                            </div>
+                                            <div class="col form-check">
+                                                <input class="form-check-input" type="radio"
+                                                    id="radio-landing-standard-package" disabled>
+                                                <label class="form-check-label" for="radio-landing-standard-package">
+                                                    Standard Package
+                                                </label>
+                                            </div>
+                                            <div class="col form-check">
+                                                <input class="form-check-input" type="radio"
+                                                    id="radio-landing-premium-package" disabled>
+                                                <label class="form-check-label" for="radio-landing-premium-package">
+                                                    Premium Package
+                                                </label>
+                                            </div>
+                                        </div>
+
+                                        <div class="mb-3">
+                                            <label for="brief-text" class="col-form-label mb-1">Brief project
+                                                description:</label>
+                                            <textarea class="form-control bg-white text-black p-2" id="brief-text"
+                                                rows="4" cols="6"></textarea>
+                                        </div>
+                                        <div class="form-check mt-4">
+                                            <input class="form-check-input" type="checkbox" id="form-consent-checkbox"
+                                                required>
+                                            <label class="form-check-label" for="form-consent-checkbox">
+                                                I agree to receive further communications!!
+                                            </label>
+                                        </div>
+                                        <button type="submit" class="btn mt-3">Submit</button>
+                                    </form>
+                                </div>
+                                <div class="modal-footer p-0">
+                                    <p>You will receive further procedure from me, once submitted the form!</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+
+            <!-- Modal -->
+            <div class="modal fade" id="packagesModal" tabindex="-1" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-4">Order Confirmation</h1>
+                            <button type="button" class="btn-close me-1" data-bs-dismiss="modal"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <form>
+                                <!-- Personal Info -->
+                                <div class="row mt-2 mb-2">
+                                    <div class="col">
+                                        <label for="client-name" class="col-form-label">Name:</label>
+                                        <input type="text" class="form-control" id="client-name" required>
+                                    </div>
+                                    <div class="col">
+                                        <label for="client-number" class="col-form-label">Number:</label>
+                                        <input type="number" class="form-control" id="client-number" required>
+                                    </div>
+                                    <div class="col">
+                                        <label for="client-email" class="col-form-label">Email:</label>
+                                        <input type="email" class="form-control" id="client-email" required>
+                                    </div>
+                                </div>
+
+                                <!-- Package Info -->
+                                <div class="row align-items-center my-3">
+                                    <input type="text" hidden aria-hidden="true" id="service-name-input">
+                                    <div class="col form-check">
+                                        <input class="form-check-input" type="radio" id="radio-landing-basic-package"
+                                            checked>
+                                        <label class="form-check-label" for="radio-landing-basic-package">
+                                            Basic Package
+                                        </label>
+                                    </div>
+                                    <div class="col form-check">
+                                        <input class="form-check-input" type="radio" id="radio-landing-standard-package"
+                                            disabled>
+                                        <label class="form-check-label" for="radio-landing-standard-package">
+                                            Standard Package
+                                        </label>
+                                    </div>
+                                    <div class="col form-check">
+                                        <input class="form-check-input" type="radio" id="radio-landing-premium-package"
+                                            disabled>
+                                        <label class="form-check-label" for="radio-landing-premium-package">
+                                            Premium Package
+                                        </label>
+                                    </div>
+                                </div>
+
+                                <div class="mb-3">
+                                    <label for="brief-text" class="col-form-label mb-1">Brief project
+                                        description:</label>
+                                    <textarea class="form-control bg-white text-black p-2" id="brief-text" rows="4"
+                                        cols="6"></textarea>
+                                </div>
+                                <div class="form-check mt-4">
+                                    <input class="form-check-input" type="checkbox" id="form-consent-checkbox" required>
+                                    <label class="form-check-label" for="form-consent-checkbox">
+                                        I agree to receive further communications!!
+                                    </label>
+                                </div>
+                                <button type="submit" class="btn mt-3">Submit</button>
+                            </form>
+                        </div>
+                        <div class="modal-footer p-0">
+                            <p>You will receive an email from me for the next step, <br> once submitted the form!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <div class="row mt-2 mb-0">
+                    <div class="col">
+                        <p class="text-secondary" style="text-align: center; font-size: 16px;">Looking for a
+                            personalized approach that caters to your distinct
+                            requirements?</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col text-center">
+                        <a href="./index.html#contact-form" class="btn btn-success justify-content-center text-center"
+                            style="text-align: center; font-size: 13px;">Contact me</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonial -->
+        <section class="u-clearfix u-image u-section-2 snipcss-2I93g pb-5" style="margin-top: 250px;">
+            <div class="row">
+                <div class="col">
+                    <h3 class="text-center text-white text-bg-dark p-3 py-4 fs-1 rounded-4 w-50 m-auto position-relative"
+                        style="top: -100px;">What <span class="text-warning">they</span> have to say
+                        <p class="px-5 my-5 fs-3">Through the eyes of those I've worked with, experience the
+                            transformative
+                            journey we
+                            embark on together. The dedication to excellence, innovation, and client satisfaction is
+                            best
+                            showcased through their words.</p>
+                    </h3>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row justify-content-center mb-5">
+                    <div class="col-6">
+                        <h2 class="u-custom-font text-center u-font-playfair-display u-text-2">
+                            Margo
+                            <b>Dawson</b>
+                        </h2>
+                        <p class="fs-3">"Working with him was an absolute game-changer
+                            for my business. His expertise in web design and development transformed
+                            our
+                            online presence. A partner in success, indeed."</p>
+                        <img src="./assets/images/services/___._.png" alt=""
+                            class="u-image u-image-contain u-image-default u-image-1 w-50">
+                    </div>
+                    <div class="col-5">
+                        <video src="./assets/images/services/new_recording_-_8_19_2023,_8_03_41_pm (Original).mp4"
+                            class="p-4 bg-white bg-opacity-50 rounded-5 shadow" autoplay loop
+                            style="object-fit: cover; height: 350px; width: 120%;"></video>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <div class="waves">
+                <div class="wave" id="wave1"></div>
+                <div class="wave" id="wave2"></div>
+                <div class="wave" id="wave3"></div>
+                <div class="wave" id="wave4"></div>
+            </div>
+            <ul class="social-icon">
+                <li class="social-icon__item"><a class="social-icon__link" href="#">
+                        <ion-icon name="logo-twitter" class="fs-1"></ion-icon>
+                    </a></li>
+                <li class="social-icon__item"><a class="social-icon__link" href="#">
+                        <ion-icon name="logo-linkedin" class="fs-1"></ion-icon>
+                    </a></li>
+                <li class="social-icon__item"><a class="social-icon__link" href="#">
+                        <ion-icon name="logo-github" class="fs-1"></ion-icon>
+                    </a></li>
+            </ul>
+            <ul class="menu">
+                <li class="menu__item"><a class="menu__link fs-3" href="./Home.html">Home</a></li>
+                <li class="menu__item"><a class="menu__link fs-3" href="#">About</a></li>
+                <li class="menu__item"><a class="menu__link fs-3" href="#">Services</a></li>
+                <!-- <li class="menu__item"><a class="menu__link" href="#">Team</a></li> -->
+                <li class="menu__item"><a class="menu__link fs-3" href="./Home.html#contact-form">Contact</a></li>
+
+            </ul>
+            <p class="fs-4 m-0">Images by <a class="text-white fs-4"
+                    href="https://www.freepik.com/free-vector/fashion-shopping-app-template-set_9908293.htm#query=Screenshots%20of%20an%20ecommerce%20website%20s%20product%20listing%20page&position=4&from_view=search&track=ais">Freepik</a>
+            </p>
+            <p class="fs-4 text-center m-0">&copy;2023 Kishan Salvi | All Rights Reserved</p>
+        </footer>
+
+    </main>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

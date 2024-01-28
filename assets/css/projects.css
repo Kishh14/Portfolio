@@ -1,0 +1,125 @@
+html {
+    font-size: 62.5%;
+}
+
+.breadcrumb-con {
+    background: url(../images/services/svg-bg.png);
+    height: 235px;
+}
+
+.breadcrumb-con h1 {
+    font-size: 4rem;
+}
+
+.projects-section {
+    margin-top: 80px;
+}
+
+.project{
+    margin-bottom: 35px;
+}
+
+.projects__navbar .btn {
+    font-size: 1.7rem;
+    transition: all ease 0.5s;
+}
+
+.projects__navbar .btn:hover,
+.projects__navbar .btn.acitve {
+    border-color: rgb(165, 122, 206);
+}
+
+@media screen and (max-width: 768px) {
+    .breadcrumb-con {
+        height: 26vh;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .breadcrumb-con h1 {
+        font-size: 3rem;
+        margin-bottom: 6px;
+    }
+
+    .hero-section p {
+        font-size: 10px !important;
+        letter-spacing: 2px !important;
+    }
+
+    .hero-section h3 {
+        font-size: 1.5rem !important;
+    }
+
+    .projects-section {
+        margin-top: 50px;
+    }
+
+    .projects__navbar .btn {
+        font-size: 1.2rem;
+    }
+
+    .navbar-brand {
+        margin-right: 0px;
+    }
+
+    .projects__navbar .btn {
+        padding: 2px 5px;
+    }
+
+    .project h2 {
+        white-space: wrap !important;
+        font-size: 19px !important;
+        text-align: center;
+    }
+
+    .project p {
+        text-align: justify;
+    }
+}
+
+@media screen and (min-width:900px) and (max-width: 1024px) {
+    /* .breadcrumb-con {
+        height: 30vh;
+    } */
+
+    .hero-section p {
+        font-size: 13px !important;
+        letter-spacing: 3px !important;
+    }
+
+    .hero-section h3 {
+        font-size: 2rem !important;
+    }
+
+    .navbar-brand {
+        margin-right: 3px;
+    }
+
+    .projects__navbar .btn {
+        padding: 4px 9px;
+        font-size: 1.4rem;
+    }
+}
+
+@media screen and (min-width:900px) and (max-width: 1325px) {
+    .breadcrumb-con h1 {
+        font-size: 5rem;
+    }
+
+    .hero-section p {
+        font-size: 18px !important;
+        letter-spacing: 5px !important;
+    }
+
+    .hero-section h3 {
+        font-size: 2.5rem !important;
+    }
+
+    .projects__navbar .btn {
+        font-size: 2rem;
+    }
+
+    .project h2 {
+        white-space: wrap !important;
+    }
+}
