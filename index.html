@@ -546,7 +546,7 @@
                     <div class="u-container-layout u-valign-middle u-container-layout-3">
                       <h4 class="u-text u-text-body-alt-color u-text-3"> Get started with a free quotation</h4>
                       <div class="u-form u-form-1">
-                        <form name="contact" action="./success.html" method="POST" data-netlify="true"
+                        <form name="contact" method="POST" data-netlify="true"
                           class="u-clearfix u-form-spacing-15 u-form-vertical u-inner-form" source="email" name="form"
                           style="padding: 0px;">
                           <input type="hidden" id="siteId" name="siteId" value="4640168">
@@ -579,7 +579,7 @@
                           </div> -->
                           <div class="u-align-right u-form-group u-form-submit mt-3">
                             <button type="submit" class="btn btn-light rounded-pill w-100 py-3 fw-bold"
-                              fdprocessedid="92g3p1">Submit
+                              fdprocessedid="92g3p1" data-bs-toggle="modal" data-bs-target="#exampleModal">Submit
                               your request
                             </button>
                             <input type="submit" name="Submit" value="submit" class="u-form-control-hidden">
@@ -592,6 +592,22 @@
                           <input type="hidden" name="formServices" value="4a23f9b21c60ae52dbbd704f06ec4a0d">
                           <input type="hidden" name="siteKey" value="6Lc2HDEiAAAAALpe1yqNarK-BmlyYl_MNPZx7_AB"> -->
                         </form>
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                          aria-hidden="true">
+                          <div class="modal-dialog">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="exampleModalLabel">Form Submitted!!</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                  aria-label="Close"></button>
+                              </div>
+                              <!-- <div class="modal-body">
+                                <p>Form submitted successfully!!</p>
+                              </div> -->
+                            </div>
+                          </div>
+                        </div>
                       </div>
                     </div>
                   </div>
