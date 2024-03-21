@@ -70,6 +70,18 @@ const projectsData = [
     techStack: ["HTML", "CSS"],
     category: ["Landing Pages", "Ecommerce Websites"],
   },
+  {
+    id: 7,
+    title: "Kishha: Woocomerce Website",
+    link: "https://kishha.com/",
+    image: "./assets/images/projects/Kishha.jpeg",
+    description: `An E-commerce website crafted with
+    WordPress, Woocomerce, and Few Extension. The homepage introduces a captivating shopping
+    experience, while the shop, contact, about, and single product pages contribute to a
+    seamless and responsive design.`,
+    techStack: ["WordPress", "Woocomerce", "Few Extension"],
+    category: ["Ecommerce Websites"],
+  },
 ];
 
 // Add active class to the navbar
