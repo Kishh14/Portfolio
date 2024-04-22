@@ -1,25 +1,24 @@
 const projectsData = [
   {
     id: 1,
-    title: `Amazon Clone: E-commerce Website`,
-    link: "https://amazon-clone-kishh.netlify.app/",
-    image: "./assets/images/projects/amazone-clone.png",
-    description: `A fully responsive, multi-page replica of the
-    Amazon e-commerce platform. Featuring clean design and interactive product listings,
-    it's a practice project built with HTML5, CSS, and Bootstrap5.`,
-    techStack: ["HTML", "CSS", "Bootstrap", "JavaScript"],
-    category: ["Clones", "Ecommerce Websites"],
+    title: "Mentor Mafia: Empowering Mentees",
+    link: "https://mentor-mafia.vercel.app",
+    image: "./assets/images/projects/mentormafia.png",
+    description: `Mentor Mafia is a web application built using cutting-edge technologies (React, Appwrite) that disrupts the traditional mentorship landscape. This platform facilitates seamless connections between mentees seeking guidance and established mentors ready to share their expertise.`,
+    techStack: ["React", "JavaScript", "Tailwind"],
+    category: [""],
   },
   {
     id: 2,
-    title: "WhatsApp Clone: Messaging App",
-    link: "https://whatsapp-clone-kishh.netlify.app/",
-    image: "./assets/images/projects/whatsapp-clone.png",
-    description: `A faithful clone of the popular messaging app
-    WhatsApp, this project mirrors its functionality using HTML5, CSS3, and Vanilla
-    JavaScript. With a clean interface and user-friendly features.`,
-    techStack: ["HTML", "CSS", "JavaScript"],
-    category: ["Clones"],
+    title: "Kickup Golf: Family-Friendly Landing",
+    link: "https://kickup-golf-kishh.netlify.app/",
+    image: "./assets/images/projects/sidcup-golf.png",
+    description: `A captivating landing page for "Kickup Family Golf"
+    designed with HTML5, CSS3, Vanilla JS, and GSAP. This responsive site introduces a
+    family golf club with modern animations, seamlessly blending information about golf in a
+    single-page experience.`,
+    techStack: ["HTML", "CSS", "JavaScript", "GSAP"],
+    category: ["Animated Websites", "Landing Pages"],
   },
   {
     id: 3,
@@ -35,15 +34,14 @@ const projectsData = [
   },
   {
     id: 4,
-    title: "Kickup Golf: Family-Friendly Landing",
-    link: "https://kickup-golf-kishh.netlify.app/",
-    image: "./assets/images/projects/sidcup-golf.png",
-    description: `A captivating landing page for "Kickup Family Golf"
-    designed with HTML5, CSS3, Vanilla JS, and GSAP. This responsive site introduces a
-    family golf club with modern animations, seamlessly blending information about golf in a
-    single-page experience.`,
-    techStack: ["HTML", "CSS", "JavaScript", "GSAP"],
-    category: ["Animated Websites", "Landing Pages"],
+    title: "WhatsApp Clone: Messaging App",
+    link: "https://whatsapp-clone-kishh.netlify.app/",
+    image: "./assets/images/projects/whatsapp-clone.png",
+    description: `A faithful clone of the popular messaging app
+    WhatsApp, this project mirrors its functionality using HTML5, CSS3, and Vanilla
+    JavaScript. With a clean interface and user-friendly features.`,
+    techStack: ["HTML", "CSS", "JavaScript"],
+    category: ["Clones"],
   },
   {
     id: 5,
@@ -81,6 +79,17 @@ const projectsData = [
     seamless and responsive design.`,
     techStack: ["WordPress", "Woocomerce", "Few Extension"],
     category: ["Ecommerce Websites"],
+  },
+  {
+    id: 8,
+    title: `Amazon Clone: E-commerce Website`,
+    link: "https://amazon-clone-kishh.netlify.app/",
+    image: "./assets/images/projects/amazone-clone.png",
+    description: `A fully responsive, multi-page replica of the
+    Amazon e-commerce platform. Featuring clean design and interactive product listings,
+    it's a practice project built with HTML5, CSS, and Bootstrap5.`,
+    techStack: ["HTML", "CSS", "Bootstrap", "JavaScript"],
+    category: ["Clones", "Ecommerce Websites"],
   },
 ];
 
