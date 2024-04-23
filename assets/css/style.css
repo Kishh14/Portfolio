@@ -18627,7 +18627,7 @@ html {
 /*end-variables base-font-size*/
 
 /* Navbar */
-.navbar-brand{
+.navbar-brand {
   font-weight: 600 !important;
   font-style: italic;
 }
@@ -18642,9 +18642,7 @@ html {
 .nav-link:hover {
   border-bottom: 1px solid white;
   padding-bottom: 3px;
-  /* text-decoration: underline; */
 }
-
 
 
 /* <!-- fOOTER --> */
@@ -18771,3 +18769,23 @@ footer>* {
     background-positon-x: 0px;
   }
 }
+
+
+/* Responsiveness */
+@media screen and (min-width: 320px) and (max-width:992px) {
+  .navbar .container-fluid {
+    justify-content: space-between !important;
+  }
+
+  .collapse .navbar-nav {
+    background: #000000bf;
+    padding: 10px;
+    backdrop-filter: blur(4px);
+    text-align: left;
+    border-radius: 5px;
+  }
+}
+
+/* @media screen and (min-width: 0px) and (max-width: 340px) {
+  
+} */

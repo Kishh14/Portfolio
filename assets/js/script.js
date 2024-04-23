@@ -93,9 +93,9 @@ const handleFormSubmit = () => {
 
   if (nameInput.value && emailInput.value && messageInput.value) {
     alert("Thank you 🫱🏻‍🫲🏻, I will get in touch with you soon!");
-    nameInput.value = '';
-    emailInput.value = '';
-    messageInput.value = '';
+    // nameInput.value = '';
+    // emailInput.value = '';
+    // messageInput.value = '';
   } else {
     alert("Please fill all the required fields")
   }
