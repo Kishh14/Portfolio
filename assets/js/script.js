@@ -86,6 +86,21 @@ const showModal = (button) => {
   }
 };
 
+const handleFormSubmit = () => {
+  const nameInput = document.getElementById('name-4c18');
+  const emailInput = document.getElementById('email-4c18');
+  const messageInput = document.getElementById('message-4c18');
+
+  if (nameInput.value && emailInput.value && messageInput.value) {
+    alert("Thank you 🫱🏻‍🫲🏻, I will get in touch with you soon!");
+    nameInput.value = '';
+    emailInput.value = '';
+    messageInput.value = '';
+  } else {
+    alert("Please fill all the required fields")
+  }
+}
+
 // const moreText = document.getElementById("more");
 // const moreBtn = document.getElementById("more-button");
 
